@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "5b47e8be-6947-41ab-bf1d-9d8ddfea85f8",
+		"name": "Request For Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "9872364-5b47e8be-6947-41ab-bf1d-9d8ddfea85f8"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"id": "c46fd802-976b-4278-bd0b-deb9c6b9bbbb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "routinder-production.up.railway.app/users/auth",
+					"host": [
+						"routinder-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"users",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
